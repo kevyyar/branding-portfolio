@@ -1,0 +1,87 @@
+#services {
+  padding: 80px 15px;
+}
+
+#services .title {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#services .title .circle {
+  background: #eef9ff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 23px;
+}
+
+#services .title h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #16171b;
+  z-index: 1;
+  position: relative;
+  letter-spacing: 4px;
+}
+
+#services .services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+#services .services-container .box {
+  background: rgba(255, 255, 255, 0);
+  transition: all 0.4s ease-in-out;
+  padding: 40px;
+}
+
+#services .services-container .box h5 {
+  font-size: 0.9rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+#services .services-container .box p {
+  font-size: 0.9rem;
+  color: #b3b3b3;
+  line-height: 1.5;
+}
+
+#services .services-container .box.blue {
+  border-bottom: 2px solid #52b8ff;
+}
+
+#services .services-container .box.blue:hover {
+  box-shadow: 10px 5px 5px rgba(228, 241, 254, 0.7);
+}
+
+#services .services-container .box.red {
+  border-bottom: 2px solid #ff5253;
+}
+
+#services .services-container .box.red:hover {
+  box-shadow: 10px 5px 5px rgb(246, 36, 89, 0.5);
+}
+
+#services .services-container .box.yellow {
+  border-bottom: 2px solid #ffc853;
+}
+
+#services .services-container .box.yellow:hover {
+  box-shadow: 10px 5px 5px rgba(255, 255, 126, 0.5);
+}
+
+#services .services-container .box .fas {
+  padding-bottom: 40px;
+  font-size: 40px;
+}

@@ -1,0 +1,220 @@
+#portfolio {
+  padding: 80px 15px;
+}
+
+#portfolio .title {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#portfolio .title .square {
+  background: #ffeded;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 23px;
+}
+
+#portfolio .title h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #16171b;
+  z-index: 1;
+  position: relative;
+  letter-spacing: 4px;
+}
+
+#portfolio .portfolio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 150px 150px 150px 150px;
+  grid-gap: 10px;
+}
+
+#portfolio .portfolio-container .box {
+  background: red;
+  display: block;
+  transition: all 0.4s ease-in-out;
+  /* padding: 40px; */
+  /* height: 200px; */
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+#portfolio .portfolio-container .box:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0, 0.08);
+}
+
+#portfolio .portfolio-container .box .image .hover-bg {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0);
+  transition: all 0.4s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+
+#portfolio .portfolio-container .box:hover .image .hover-bg {
+  padding: 10px 20px;
+  background: rgba(255, 53, 53, 0.8);
+}
+
+#portfolio .portfolio-container .box .image .hover-bg .title .project-name {
+  background: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transform: translate3d(0, 400px, 0);
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+#portfolio
+  .portfolio-container
+  .box:hover
+  .image
+  .hover-bg
+  .title
+  .project-name {
+  background: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/* BOXES LOCATION */
+
+#portfolio .portfolio-container .box.img1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+#portfolio .portfolio-container .box.img1 .image {
+  background: url("https://cdn.dribbble.com/users/1846841/screenshots/4301291/f_r_a_n_c_o.gif");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#portfolio .portfolio-container .box.img2 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 5;
+}
+
+#portfolio .portfolio-container .box.img2 .image {
+  background: url("https://cdn.dribbble.com/users/14268/screenshots/5418845/northface-2.gif");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#portfolio .portfolio-container .box.img3 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+
+#portfolio .portfolio-container .box.img3 .image {
+  background: url("https://cdn.dribbble.com/users/1846841/screenshots/5517957/cabine_outtake.gif");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#portfolio .portfolio-container .box.img4 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+#portfolio .portfolio-container .box.img4 .image {
+  background: url("/img/first_man_lana_marandina_2x.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#portfolio .portfolio-container .box.img4 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+#portfolio .portfolio-container .box.img4 .image {
+  background: url("/img/38_2x.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#portfolio .portfolio-container .box.img5 {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+#portfolio .portfolio-container .box.img5 .image {
+  background: url("/img/6_2x.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#portfolio .portfolio-container .box.img6 {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+#portfolio .portfolio-container .box.img6 .image {
+  background: url("/img/first_man_lana_marandina_2x.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#portfolio .portfolio-container .box.img6 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 5;
+}
+
+#portfolio .portfolio-container .box.img6 .image {
+  background: url("https://cdn.dribbble.com/users/1121893/screenshots/5498145/dribbble-eline_ye.gif");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#portfolio .portfolio-container .box.img7 {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+}
+
+#portfolio .portfolio-container .box.img7 .image {
+  background: url("/img/uplaw-early_exploration_2x.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

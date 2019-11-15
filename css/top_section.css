@@ -1,0 +1,73 @@
+#top_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 0;
+    align-items: center;
+}
+
+#top-section .container {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 0; */
+ }
+
+#top_section .info {
+    padding: 15px;
+    position: relative;
+}
+
+#top_section .info .blue-square {
+    border: 20px solid #dbf1ff;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    z-index: 0;
+    top: -70%;
+    left: -140%;
+}
+
+#top_section .info h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #16171b;
+    margin-bottom: 2rem;
+    z-index: 1;
+    position: relative;
+}
+
+#top_section .info p {
+    color: #919191;
+    text-transform: capitalize;
+    margin-bottom: 4rem;
+    z-index: 1;
+    position: relative;
+
+
+}
+
+#top_section .info a {
+    color: #16171b;
+    font-weight: 700;
+    font-size: .9rem;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #000;
+    text-transform: uppercase;
+    z-index: 1;
+    position: relative;
+    letter-spacing: 2px;
+
+
+}
+
+#top_section .img .background-img {
+    background: url(/img/model-man.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
