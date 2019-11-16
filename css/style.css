@@ -3,6 +3,7 @@
 @import "/css/services.css";
 @import "/css/portfolio_section.css";
 @import "/css/experience-section.css";
+@import "/css/blog_section.css";
 
 .container {
   max-width: 1400px;
