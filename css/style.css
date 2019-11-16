@@ -1,9 +1,10 @@
 @import "/css/reset.css";
 @import "/css/top_section.css";
-@import "/css/services.css";
+@import "/css/services_section.css";
 @import "/css/portfolio_section.css";
-@import "/css/experience-section.css";
+@import "/css/experience_section.css";
 @import "/css/blog_section.css";
+@import "/css/testimonial_section.css";
 
 .container {
   max-width: 1400px;
