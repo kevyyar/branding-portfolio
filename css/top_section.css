@@ -5,12 +5,6 @@
     align-items: center;
 }
 
-#top-section .container {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 80px 0; */
- }
-
 #top_section .info {
     padding: 15px;
     position: relative;
