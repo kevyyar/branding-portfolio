@@ -59,6 +59,41 @@ header .menu-btn {
   cursor: pointer;
 }
 
+.mobile-menu {
+  background: rgb(175, 170, 170);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 100vh;
+  width: 50%;
+  top: 0;
+  z-index: 5;
+  transform: translate3d(-120%, 0, 0);
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 11px 0px 13px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 11px 0px 13px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 11px 0px 13px -8px rgba(0, 0, 0, 0.75);
+}
+
+.mobile-menu.active {
+  transform: translate3d(0, 0, 0);
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 10px;
+  font-weight: 800;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu a:hover {
+  color: #fff;
+  padding: 15px 20px;
+  background-color: rgba(255, 53, 53, 0.8);
+}
+
 /* TABLET */
 @media only screen and (max-width: 960px) {
   .container {
