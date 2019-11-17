@@ -94,3 +94,25 @@
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+
+/* TABLETS */
+@media only screen and (max-width: 960px) {
+  #blog-section .blog-container {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  #blog-section .blog-container .post .post-details {
+    top: 120%;
+}
+
+/* PHONES */
+@media only screen and (max-width: 767px) {
+  #blog-section .title h1 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+}
+#blog-section .blog-container .post .post-details {
+  top: 100%;
+}
+}

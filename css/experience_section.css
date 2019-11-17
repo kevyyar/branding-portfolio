@@ -146,3 +146,67 @@
   text-transform: capitalize;
   line-height: 1.8;
 }
+
+/* TABLETS */
+@media only screen and (max-width: 960px) {
+  #experience-section .experience-container .large-icons .experience-square {
+    top: 40px;
+    left: 35px;
+  }
+
+  #experience-section .experience-container .large-icons .awards-circle {
+    top: 12px;
+    left: 25px;
+  }
+
+  #experience-section .experience-container .large-icons .work-triangle {
+    left: -10px;
+    top: -20px;
+  }
+
+  #experience-section .experience-container .experience-info .info-box h4 {
+    font-size: 1.5rem;
+  }
+
+  #experience-section .experience-container .experience-info .info-box .date {
+    font-size: 1.1rem;
+  }
+
+  #experience-section .experience-container .experience-info .info-box p {
+    font-size: 1.1rem;
+  }
+}
+
+/* PHONES */
+@media only screen and (max-width: 767px) {
+  #experience-section .large-title {
+    font-size: 2.8rem;
+  }
+
+  #experience-section .experience-container {
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+
+  #experience-section .experience-container .large-icons .experience-square {
+    left: 0;
+  }
+
+  #experience-section .experience-container .large-icons .awards-circle {
+    left: 0;
+  }
+
+  #experience-section .experience-container .large-icons .work-triangle {
+    left: 20px;
+    top: -20px;
+  }
+
+  #experience-section .experience-container .experience-info .info-box p {
+    text-align: left;
+  }
+
+  #experience-section .experience-container .experience-info .info-box .date {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.267);
+    margin-bottom: 20px;
+  }
+}

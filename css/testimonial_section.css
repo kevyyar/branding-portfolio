@@ -40,7 +40,7 @@
 #testimonials .testimonial-container .test-center {
   background: #fff;
   padding: 60px;
-  box-shadow: 10px 5px 5px rgba(255, 255, 126, 0.5);
+  box-shadow: 10px 5px 5px #c6e4ff;
 }
 
 #testimonials .testimonial-container .test-center .header {
@@ -138,4 +138,52 @@
   transition: all 0.3s ease-in-out;
   transform: translate3d(0, 0, 0);
   opacity: 1;
+}
+
+/* TABLETS */
+@media only screen and (max-width: 960px) {
+  #testimonials .title h1 {
+    font-size: 2.8rem;
+  }
+
+  #testimonials .testimonial-container {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-gap: 0;
+    padding-top: 100px;
+  }
+
+  /* PHONES */
+  @media only screen and (max-width: 767px) {
+    #testimonials .testimonial-container {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: 100px 1fr;
+      grid-gap: 0;
+      padding-top: 100px;
+    }
+
+    #testimonials .testimonial-container .test-left {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    #testimonials .testimonial-container .test-right {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+
+    #testimonials .testimonial-container .test-center {
+      grid-column: 1 / 3;
+      grid-row: 2 / 2;
+      padding: 20px;
+    }
+
+    #testimonials .testimonial-container .test-center .header .info-title h4 {
+      font-size: 12px;
+    }
+
+    #testimonials .testimonial-container .test-center p {
+      font-size: 1rem;
+  }
 }

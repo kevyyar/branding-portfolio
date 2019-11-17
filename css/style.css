@@ -5,8 +5,23 @@
 @import "/css/experience_section.css";
 @import "/css/blog_section.css";
 @import "/css/testimonial_section.css";
+@import "/css/footer_section.css";
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+/* TABLET */
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* PHONES */
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
 }
